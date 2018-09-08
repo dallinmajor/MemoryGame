@@ -30,10 +30,7 @@ class App extends Component {
 
   shuffle() {
     Characters.forEach(character => {
-      let number = Math.floor((Math.random() * 20) + 1);
-      console.log(number);
-       number% 2 ? this.push(character) : this.unshift(character);
-
+      Math.floor((Math.random() * 20) + 1)% 2 ? this.push(character) : this.unshift(character);
     });
     Characters = this.state.characters;
   };
@@ -84,9 +81,6 @@ class App extends Component {
 
 
   handleInput(value) {
-
-    
-
     this.state.picked.includes(value) ? this.incorrect() : this.correct(value);
   };
 
