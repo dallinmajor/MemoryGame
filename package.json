@@ -7,7 +7,7 @@
   "license": "MIT",
   "homepage": "https://dallinmajor.github.io/MemoryGame/",
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -15,7 +15,9 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "create-react-app": "^1.5.2",
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
   }
 }
