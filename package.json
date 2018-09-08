@@ -5,7 +5,17 @@
   "repository": "https://github.com/dallinmajor/MemoryGame.git",
   "author": "Dally Wally <dallin.watac.major@gmail.com>",
   "license": "MIT",
+  "homepage": "https://dallinmajor.github.io/MemoryGame/",
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
-    "create-react-app": "^1.5.2"
+    "create-react-app": "^1.5.2",
+    "gh-pages": "^1.2.0"
   }
 }
