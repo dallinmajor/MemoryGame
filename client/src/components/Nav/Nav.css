@@ -1,11 +1,42 @@
+h1 {
+    font-family: 'Cormorant SC', serif;
+}
+
+p {
+    font-family: 'Cinzel', serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Marcellus SC', serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cormorant SC', serif;
+
+    font-size: 28px;
+    display: block;
+    margin: auto;
+}
+
+.blue-color {
+    
+    background-color: #ffe435;
+    background-color: #d3be70;
+}
+
 .padding-col {
-    padding: 15px;
+    padding: 10px;
 }
 
 .logo {
     width: 350px;
     display: block;
     margin: auto;
+    padding: 10px;
+}
+
+.prompt {
+    font-size: 30px;
+    font-family: 'Cormorant SC', serif;
+    display: block;
+    margin: auto;
+    padding: 8px;
 }
 
 .width-100 {

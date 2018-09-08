@@ -30,7 +30,10 @@ class App extends Component {
 
   shuffle() {
     Characters.forEach(character => {
-      Math.floor((Math.random * 4) + 1) % 2 ? this.push(character) : this.unshift(character);
+      let number = Math.floor((Math.random() * 20) + 1);
+      console.log(number);
+       number% 2 ? this.push(character) : this.unshift(character);
+
     });
     Characters = this.state.characters;
   };
@@ -51,13 +54,6 @@ class App extends Component {
     });
   };
 
-  handleInput(value) {
-
-    this.correct(value);
-
-    this.state.picked.includes(value) ? this.incorrect() : this.correct(value);
-  }
-
   incorrect() {
     if (this.state.score > this.state.highScore) {
       this.setState({
@@ -75,13 +71,23 @@ class App extends Component {
   };
 
   correct(value) {
+
     this.setState({
       picked: this.state.picked.concat(value),
       correct: true,
       score: this.state.score + 1,
       prompt: "You guessed correctly!"
-    })
+    });
 
+    this.prepareToShuffle();
+  };
+
+
+  handleInput(value) {
+
+    
+
+    this.state.picked.includes(value) ? this.incorrect() : this.correct(value);
   };
 
   render() {
@@ -104,7 +110,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div >
     );
   }

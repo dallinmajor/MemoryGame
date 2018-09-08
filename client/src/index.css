@@ -1,0 +1,13 @@
+body {
+    
+    background-image: url('./images/cold.jpg');
+    background-image: url('./images/Game-Of-Thrones-The-Wall-Wallpaper.jpg');
+    background-image: url('./images/game_of_thrones___mountains_of_the_moon_by_newyounggun-da43jq4.jpg');
+
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
