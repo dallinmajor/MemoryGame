@@ -2,6 +2,7 @@
     float: left;
     border: 10px solid gray;
     border-radius: 8px;
-    width: 20%;
-    margin: 20px;
+    width: 19%;
+    margin: 12px 30px;
+    box-shadow: -20px 30px 30px 0px rgba(0,0,0,.75);
 }
